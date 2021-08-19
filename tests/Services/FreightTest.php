@@ -1,17 +1,17 @@
 <?php
 
-namespace FlyingLuscas\Correios\Tests\Services;
+namespace Correios\Tests\Services;
 
-use FlyingLuscas\Correios\PackageType;
-use FlyingLuscas\Correios\Service;
-use FlyingLuscas\Correios\Tests\TestCase;
+use Correios\PackageType;
+use Correios\Service;
+use Correios\Tests\TestCase;
 use GuzzleHttp\Client as HttpClient;
-use FlyingLuscas\Correios\Services\Freight;
+use Correios\Services\Freight;
 
 class FreightTest extends TestCase
 {
     /**
-     * @var \FlyingLuscas\Correios\Services\Freight
+     * @var \Correios\Services\Freight
      */
     protected $freight;
 

@@ -1,14 +1,14 @@
 <?php
 
-namespace FlyingLuscas\Correios\Services\Tests;
+namespace Correios\Services\Tests;
 
-use FlyingLuscas\Correios\Service;
-use FlyingLuscas\Correios\Tests\TestCase;
+use Correios\Service;
+use Correios\Tests\TestCase;
 use GuzzleHttp\Client as HttpClient;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\Psr7\Response;
-use FlyingLuscas\Correios\Services\Freight;
+use Correios\Services\Freight;
 
 class CalculateFreightTest extends TestCase
 {

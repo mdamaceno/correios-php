@@ -1,6 +1,6 @@
 <?php
 
-namespace FlyingLuscas\Correios\Tests;
+namespace Correios\Tests;
 
 use PHPUnit\Framework\TestCase as PHPUnitTestCase;
 

@@ -1,15 +1,15 @@
 <?php
 
-namespace FlyingLuscas\Correios\Tests;
+namespace Correios\Tests;
 
-use FlyingLuscas\Correios\Contracts\FreightInterface;
-use FlyingLuscas\Correios\Contracts\ZipCodeInterface;
-use FlyingLuscas\Correios\Client;
+use Correios\Contracts\FreightInterface;
+use Correios\Contracts\ZipCodeInterface;
+use Correios\Client;
 
 class ClientTest extends TestCase
 {
     /**
-     * @var \FlyingLuscas\Correios\Client
+     * @var \Correios\Client
      */
     protected $correios;
 

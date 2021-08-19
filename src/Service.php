@@ -1,6 +1,6 @@
 <?php
 
-namespace FlyingLuscas\Correios;
+namespace Correios;
 
 abstract class Service
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace FlyingLuscas\Correios\Services;
+namespace Correios\Services;
 
 use GuzzleHttp\ClientInterface;
-use FlyingLuscas\Correios\WebService;
-use FlyingLuscas\Correios\Contracts\ZipCodeInterface;
+use Correios\WebService;
+use Correios\Contracts\ZipCodeInterface;
 
 class ZipCode implements ZipCodeInterface
 {

@@ -1,15 +1,15 @@
 <?php
 
-namespace FlyingLuscas\Correios\Services;
+namespace Correios\Services;
 
 use SimpleXMLElement;
 use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Response;
 use GuzzleHttp\ClientInterface;
-use FlyingLuscas\Correios\Service;
-use FlyingLuscas\Correios\WebService;
-use FlyingLuscas\Correios\PackageType;
-use FlyingLuscas\Correios\Contracts\FreightInterface;
+use Correios\Service;
+use Correios\WebService;
+use Correios\PackageType;
+use Correios\Contracts\FreightInterface;
 
 class Freight implements FreightInterface
 {

@@ -28,7 +28,7 @@ $ composer require flyingluscas/correios-php
 Encontrar endereço pelo CEP consultando diretamente o [WebService][correios-sigep] dos Correios.
 
 ``` php
-use FlyingLuscas\Correios\Client;
+use Correios\Client;
 
 require 'vendor/autoload.php';
 
@@ -59,8 +59,8 @@ Resultado:
 Calcular preços e prazos de serviços de entrega (Sedex, PAC e etc), com **suporte a multiplos objetos** na mesma consulta.
 
 ``` php
-use FlyingLuscas\Correios\Client;
-use FlyingLuscas\Correios\Service;
+use Correios\Client;
+use Correios\Service;
 
 require 'vendor/autoload.php';
 
