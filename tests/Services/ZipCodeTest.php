@@ -1,8 +1,8 @@
 <?php
 
-namespace FlyingLuscas\Correios\Services;
+namespace FlyingLuscas\Correios\Tests\Services;
 
-use FlyingLuscas\Correios\TestCase;
+use FlyingLuscas\Correios\Tests\TestCase;
 use GuzzleHttp\Client as HttpClient;
 
 class ZipCodeTest extends TestCase

@@ -1,8 +1,8 @@
 <?php
 
-namespace FlyingLuscas\Correios;
+namespace FlyingLuscas\Correios\Tests;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase as PHPUnitTestCase;
 
 abstract class TestCase extends PHPUnit_Framework_TestCase
 {

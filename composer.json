@@ -31,12 +31,12 @@
     },
     "autoload": {
         "psr-4": {
-            "FlyingLuscas\\Correios\\": "src"
+            "FlyingLuscas\\Correios\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "FlyingLuscas\\Correios\\": "tests"
+            "FlyingLuscas\\Correios\\Tests\\": "tests/"
         }
     },
     "scripts": {

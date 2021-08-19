@@ -1,10 +1,10 @@
 <?php
 
-namespace FlyingLuscas\Correios\Services;
+namespace FlyingLuscas\Correios\Tests\Services;
 
 use FlyingLuscas\Correios\PackageType;
 use FlyingLuscas\Correios\Service;
-use FlyingLuscas\Correios\TestCase;
+use FlyingLuscas\Correios\Tests\TestCase;
 use GuzzleHttp\Client as HttpClient;
 
 class FreightTest extends TestCase

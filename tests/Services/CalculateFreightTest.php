@@ -1,9 +1,9 @@
 <?php
 
-namespace FlyingLuscas\Correios\Services;
+namespace FlyingLuscas\Correios\Services\Tests;
 
 use FlyingLuscas\Correios\Service;
-use FlyingLuscas\Correios\TestCase;
+use FlyingLuscas\Correios\Tests\TestCase;
 use GuzzleHttp\Client as HttpClient;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Handler\MockHandler;
