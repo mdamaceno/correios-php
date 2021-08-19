@@ -4,9 +4,9 @@ namespace FlyingLuscas\Correios\Tests;
 
 use PHPUnit\Framework\TestCase as PHPUnitTestCase;
 
-abstract class TestCase extends PHPUnit_Framework_TestCase
+abstract class TestCase extends PHPUnitTestCase
 {
-    public function setUp()
+    public function setUp() : void
     {
         parent::setUp();
 

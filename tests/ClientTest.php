@@ -1,9 +1,10 @@
 <?php
 
-namespace FlyingLuscas\Correios;
+namespace FlyingLuscas\Correios\Tests;
 
 use FlyingLuscas\Correios\Contracts\FreightInterface;
 use FlyingLuscas\Correios\Contracts\ZipCodeInterface;
+use FlyingLuscas\Correios\Client;
 
 class ClientTest extends TestCase
 {
@@ -12,7 +13,7 @@ class ClientTest extends TestCase
      */
     protected $correios;
 
-    public function setUp()
+    public function setUp() : void
     {
         parent::setUp();
 

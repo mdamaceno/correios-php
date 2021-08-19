@@ -4,6 +4,7 @@ namespace FlyingLuscas\Correios\Tests\Services;
 
 use FlyingLuscas\Correios\Tests\TestCase;
 use GuzzleHttp\Client as HttpClient;
+use FlyingLuscas\Correios\Services\ZipCode;
 
 class ZipCodeTest extends TestCase
 {
@@ -14,7 +15,7 @@ class ZipCodeTest extends TestCase
      */
     protected $http;
 
-    public function setUp()
+    public function setUp() : void
     {
         parent::setUp();
 

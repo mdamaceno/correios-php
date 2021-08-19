@@ -8,6 +8,7 @@ use GuzzleHttp\Client as HttpClient;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\Psr7\Response;
+use FlyingLuscas\Correios\Services\Freight;
 
 class CalculateFreightTest extends TestCase
 {
@@ -46,7 +47,7 @@ class CalculateFreightTest extends TestCase
      */
     protected $mock;
 
-    public function setUp()
+    public function setUp() : void
     {
         parent::setUp();
 

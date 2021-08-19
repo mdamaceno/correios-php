@@ -6,6 +6,7 @@ use FlyingLuscas\Correios\PackageType;
 use FlyingLuscas\Correios\Service;
 use FlyingLuscas\Correios\Tests\TestCase;
 use GuzzleHttp\Client as HttpClient;
+use FlyingLuscas\Correios\Services\Freight;
 
 class FreightTest extends TestCase
 {
@@ -14,7 +15,7 @@ class FreightTest extends TestCase
      */
     protected $freight;
 
-    public function setUp()
+    public function setUp() : void
     {
         parent::setUp();
 
@@ -142,8 +143,8 @@ class FreightTest extends TestCase
     /**
      * Asserts payload has a given key and value.
      *
-     * @param  sring $key
-     * @param  mixed $value
+     * @param sring $key
+     * @param mixed $value
      *
      * @return self
      */
@@ -154,9 +155,12 @@ class FreightTest extends TestCase
             return $this;
         }
 
-        $this->assertArraySubset([
-            $key => $value,
-        ], $this->freight->payload(Service::SEDEX));
+        $payload = $this->freight->payload(Service::SEDEX);
+
+        foreach ($payload as $key => $value) {
+            $this->assertArrayHasKey($key, $payload);
+            $this->assertSame($value, $payload[$key]);
+        }
 
         return $this;
     }
